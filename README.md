@@ -13,7 +13,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 
 ## Screenshot
-<img src="/quotes.png" width="1000">
+<img src="image/quotes.png" width="1000">
 
 
 ## Development server
