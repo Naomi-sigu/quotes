@@ -1,4 +1,35 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<!-- <input type="text" name="" value="">
+<input type="text" name="" value="">
+<button type="button" name="button">Button</button> -->
 
-<app-quote></app-quote>
-<router-outlet></router-outlet>
+<div class="container-fluid back">
+  <h2 class="text-center">Create a new Quote</h2>
+  <hr>
+  <form (ngSubmit)='submitQuotes()' #quoteForm='ngForm'>
+      <div class="form-group">
+
+          <label for="name">Quote</label>
+          <input type="text" required class="form-control" id="name" [(ngModel)]="newQuotes.name" name="name" #name='ngModel'>
+      </div>
+      <div class="form-group">
+
+          <label for="author">Author</label>
+          <input type="text" required class="form-control" id="author" [(ngModel)]="newQuotes.description" name="author" #name='ngModel'>
+
+      </div>
+      <div class="form-group">
+
+          <label for="publisher">Publisher</label>
+          <input type="text" required class="form-control" id="publisher" [(ngModel)]="newQuotes.publisher"  name="publisher" #name='ngModel'>
+
+      </div>
+      <div class="form-group">
+          <label for="complete">Completion</label>
+          <input type='date' id="complete" [(ngModel)]="newQuotes.completeDate"  #name='ngModel'required>
+
+      </div>
+      <div class="butt">
+        <button type="submit" name="button">ADD QUOTE</button>
+      </div>
+  </form>
+</div>
